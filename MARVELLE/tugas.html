@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas - SIGAP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <div class="flex h-screen">
+        <aside class="w-64 bg-white flex flex-col justify-between p-4 shadow-lg">
+            <div>
+                <div class="flex items-center space-x-2 p-4">
+                    <img src="img/sigap-logo.png" alt="SIGAP Logo" class="w-11 h-11">
+                    <span class="text-2xl font-bold text-gray-800">SIGAP</span>
+                </div>
+                
+                <nav class="mt-8">
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="dashboard.html" class="flex items-center space-x-3 text-gray-500 hover:bg-gray-100 hover:text-gray-800 py-3 px-4 rounded-lg">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tugas.html" class="flex items-center space-x-3 text-blue-600 bg-blue-50 font-semibold py-3 px-4 rounded-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                                <span>Tugas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dokumentasi.html" class="flex items-center space-x-3 text-gray-500 hover:bg-gray-100 hover:text-gray-800 py-3 px-4 rounded-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                                <span>Dokumentasi</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="update-status.html" class="flex items-center space-x-3 text-gray-500 hover:bg-gray-100 hover:text-gray-800 py-3 px-4 rounded-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h5M20 20v-5h-5M4 20h5v-5M20 4h-5v5"></path></svg>
+                                <span>Update Status</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <button class="w-full flex items-center justify-center space-x-2 bg-red-50 text-red-500 hover:bg-red-100 font-semibold py-3 px-4 rounded-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+
+        <main class="flex-1 p-8 overflow-y-auto">
+            <header class="flex justify-between items-center mb-8">
+                <h1 class="text-3xl font-bold text-gray-800">Tugas</h1>
+                <div class="flex items-center space-x-4">
+                    <div class="text-right">
+                        <p class="font-semibold text-gray-800">Budi Sanjaya</p>
+                        <p class="text-sm text-gray-500">Relawan - Palembang</p>
+                    </div>
+                    <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
+                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                    </div>
+                </div>
+            </header>
+
+            <div class="bg-red-50 border border-red-200 text-red-800 p-4 rounded-lg flex items-center justify-between mb-8 shadow-sm">
+                <div class="flex items-center space-x-4">
+                    <div class="bg-red-100 p-2 rounded-full">
+                        <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    </div>
+                    <div>
+                        <p class="font-bold">ALERT: TUGAS PRIORITAS MENDESAK</p>
+                        <p class="text-sm">Evakuasi Warga Terjebak Banjir di Kertapati. Segera respon.</p>
+                    </div>
+                </div>
+                <a href="tugas.html"class="bg-red-500 text-white font-semibold py-2 px-6 rounded-lg hover:bg-red-600 transition duration-300">
+                    Lihat & Respon 
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                 <div class="bg-white p-6 rounded-xl shadow-md flex items-center space-x-4">
+                    <div class="bg-red-100 p-3 rounded-full">
+                        <svg class="w-7 h-7 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div><p class="text-gray-500 text-sm">Selesai</p><p class="text-3xl font-bold text-gray-800">5</p></div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md flex items-center space-x-4">
+                    <div class="bg-yellow-100 p-3 rounded-full">
+                        <svg class="w-7 h-7 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h5M20 20v-5h-5M4 20h5v-5M20 4h-5v5"></path></svg>
+                    </div>
+                    <div><p class="text-gray-500 text-sm">Sedang Proses</p><p class="text-3xl font-bold text-gray-800">2</p></div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md flex items-center space-x-4">
+                    <div class="bg-green-100 p-3 rounded-full">
+                        <svg class="w-7 h-7 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div><p class="text-gray-500 text-sm">Selesai</p><p class="text-3xl font-bold text-gray-800">8</p></div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md flex items-center space-x-4">
+                    <div class="bg-indigo-100 p-3 rounded-full">
+                        <svg class="w-7 h-7 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <div><p class="text-gray-500 text-sm">Total Tugas</p><p class="text-3xl font-bold text-gray-800">15</p></div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-xl font-bold text-gray-800">Daftar Tugas Prioritas Anda</h2>
+                    <button id="view-all-tasks-btn" class="text-sm font-semibold text-blue-600 hover:underline">Lihat Semua Tugas</button>
+                </div>
+                
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="border-b-2 border-gray-100">
+                            <th class="py-3 px-4 font-semibold text-sm text-gray-400">PRIORITAS</th>
+                            <th class="py-3 px-4 font-semibold text-sm text-gray-400">TUGAS</th>
+                            <th class="py-3 px-4 font-semibold text-sm text-gray-400">LOKASI</th>
+                            <th class="py-3 px-4 font-semibold text-sm text-gray-400">STATUS</th>
+                            <th class="py-3 px-4 font-semibold text-sm text-gray-400">AKSI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-4"><span class="bg-red-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Mendesak</span></td>
+                            <td class="py-4 px-4 font-semibold text-gray-700">Evakuasi Warga Terjebak Banjir</td>
+                            <td class="py-4 px-4 text-gray-600">Kertapati, Palembang</td>
+                            <td class="py-4 px-4"><span class="bg-red-100 text-red-600 text-sm font-semibold px-3 py-1 rounded-md">Baru</span></td>
+                            <td class="py-4 px-4">
+                                <button class="font-bold text-blue-600 view-detail-btn"
+                                    data-title="Evakuasi Warga Terjebak Banjir"
+                                    data-location="Kertapati, Palembang"
+                                    data-priority="Mendesak"
+                                    data-status="Baru"
+                                    data-description="Tugas evakuasi darurat untuk warga di Lorong Harapan, Kertapati. Dilaporkan ketinggian air sudah mencapai 1 meter dan ada beberapa lansia yang terjebak di rumah mereka."
+                                    data-pic="Tim Alfa (Ketua: Ahmad)"
+                                    data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31874.69741334645!2d104.70783935960413!3d-3.018446979201314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b9e18e0a969df%3A0x633469493933c162!2sKertapati%2C%20Palembang%20City%2C%20South%20Sumatra!5e0!3m2!1sen!2sid!4v1663996522067!5m2!1sen!2sid">
+                                    Lihat Detail
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-50 hover:bg-gray-100">
+                            <td class="py-4 px-4"><span class="bg-yellow-400 text-white text-xs font-semibold px-3 py-1 rounded-full">Penting</span></td>
+                            <td class="py-4 px-4 font-semibold text-gray-700">Distribusi Logistik & Makanan</td>
+                            <td class="py-4 px-4 text-gray-600">Sako, Palembang</td>
+                            <td class="py-4 px-4"><span class="bg-yellow-100 text-yellow-600 text-sm font-semibold px-3 py-1 rounded-md">Proses</span></td>
+                            <td class="py-4 px-4">
+                                <button class="font-bold text-blue-600 view-detail-btn"
+                                    data-title="Distribusi Logistik & Makanan"
+                                    data-location="Sako, Palembang"
+                                    data-priority="Penting"
+                                    data-status="Proses"
+                                    data-description="Distribusi bantuan logistik berupa makanan siap saji, air mineral, dan selimut untuk 50 KK yang mengungsi di posko Masjid Al-Ikhlas, Sako."
+                                    data-pic="Tim Bravo (Ketua: Siti)"
+                                    data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31877.016335359196!2d104.70019685960012!3d-2.964958179428585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75e771488c29%3A0x863742426914566b!2sSako%2C%20Palembang%20City%2C%20South%20Sumatra!5e0!3m2!1sen!2sid!4v1663996614450!5m2!1sen!2sid">
+                                    Lihat Detail
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <div id="task-detail-modal" class="hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-xl shadow-2xl p-6 w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center border-b pb-3 mb-4">
+                <h3 id="modal-title" class="text-2xl font-bold text-gray-800">Detail Tugas</h3>
+                <button id="close-modal-btn" class="text-3xl text-gray-400 hover:text-red-500">&times;</button>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-gray-500 font-semibold">Prioritas</p>
+                            <p id="modal-priority">-</p>
+                        </div>
+                         <div>
+                            <p class="text-gray-500 font-semibold">Status</p>
+                            <p id="modal-status">-</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                       <div>
+                            <p class="text-gray-500 font-semibold">Lokasi</p>
+                            <p id="modal-location" class="font-medium text-gray-800">-</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-500 font-semibold">Penanggung Jawab (PIC)</p>
+                            <p id="modal-pic" class="font-medium text-gray-800">-</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-gray-500 font-semibold mb-1">Deskripsi Tugas</p>
+                    <p id="modal-description" class="text-gray-700 bg-gray-50 p-3 rounded-lg border">
+                        -
+                    </p>
+                </div>
+
+                <div>
+                    <p class="text-gray-500 font-semibold mb-2">Peta Lokasi</p>
+                    <div class="w-full h-64 rounded-lg overflow-hidden border">
+                        <iframe id="modal-map" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6 flex justify-end space-x-3 border-t pt-4">
+                <a id="modal-nav-link" href="#" target="_blank" class="bg-blue-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-blue-700 transition duration-300">
+                    Mulai Navigasi
+                </a>
+                <a href="update-status.html" class="bg-green-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-green-700 transition duration-300">
+                    Update Status
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="all-tasks-modal" class="hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50">
+    <div class="bg-white rounded-xl shadow-2xl p-6 w-full max-w-4xl max-h-[90vh] flex flex-col">
+        <div class="flex justify-between items-center border-b pb-3 mb-4 flex-shrink-0">
+            <h3 class="text-2xl font-bold text-gray-800">Daftar Semua Tugas</h3>
+            <button id="close-all-tasks-modal-btn" class="text-3xl text-gray-400 hover:text-red-500">×</button>
+        </div>
+        
+        <div class="modal-body overflow-y-auto">
+            <table class="w-full text-left">
+                <thead>
+                    <tr class="border-b-2 border-gray-100">
+                        <th class="py-3 px-4 font-semibold text-sm text-gray-400">PRIORITAS</th>
+                        <th class="py-3 px-4 font-semibold text-sm text-gray-400">TUGAS</th>
+                        <th class="py-3 px-4 font-semibold text-sm text-gray-400">LOKASI</th>
+                        <th class="py-3 px-4 font-semibold text-sm text-gray-400">STATUS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover:bg-gray-50 border-b">
+                        <td class="py-4 px-4"><span class="bg-red-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Mendesak</span></td>
+                        <td class="py-4 px-4 font-semibold text-gray-700">Evakuasi Warga Terjebak Banjir</td>
+                        <td class="py-4 px-4 text-gray-600">Kertapati, Palembang</td>
+                        <td class="py-4 px-4"><span class="bg-red-100 text-red-600 text-sm font-semibold px-3 py-1 rounded-md">Baru</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 border-b">
+                        <td class="py-4 px-4"><span class="bg-yellow-400 text-white text-xs font-semibold px-3 py-1 rounded-full">Penting</span></td>
+                        <td class="py-4 px-4 font-semibold text-gray-700">Distribusi Logistik & Makanan</td>
+                        <td class="py-4 px-4 text-gray-600">Sako, Palembang</td>
+                        <td class="py-4 px-4"><span class="bg-yellow-100 text-yellow-600 text-sm font-semibold px-3 py-1 rounded-md">Proses</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 border-b">
+                        <td class="py-4 px-4"><span class="bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Normal</span></td>
+                        <td class="py-4 px-4 font-semibold text-gray-700">Pendataan Kerusakan Rumah Warga</td>
+                        <td class="py-4 px-4 text-gray-600">Plaju, Palembang</td>
+                        <td class="py-4 px-4"><span class="bg-gray-100 text-gray-600 text-sm font-semibold px-3 py-1 rounded-md">Belum Dikerjakan</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('task-detail-modal');
+            const closeModalBtn = document.getElementById('close-modal-btn');
+            const viewDetailButtons = document.querySelectorAll('.view-detail-btn');
+
+            // Elemen di dalam modal
+            const modalTitle = document.getElementById('modal-title');
+            const modalPriority = document.getElementById('modal-priority');
+            const modalStatus = document.getElementById('modal-status');
+            const modalLocation = document.getElementById('modal-location');
+            const modalPic = document.getElementById('modal-pic');
+            const modalDescription = document.getElementById('modal-description');
+            const modalMap = document.getElementById('modal-map');
+            const modalNav = document.getElementById('modal-nav-link');
+
+            const priorityClasses = {
+                'Mendesak': 'bg-red-500 text-white',
+                'Penting': 'bg-yellow-400 text-white',
+            };
+            const statusClasses = {
+                'Baru': 'bg-red-100 text-red-600',
+                'Proses': 'bg-yellow-100 text-yellow-600',
+            };
+
+            // Fungsi untuk membuka modal
+            const openModal = (data) => {
+                // Mengisi data ke dalam modal
+                modalTitle.textContent = data.title;
+                modalLocation.textContent = data.location;
+                modalPic.textContent = data.pic;
+                modalDescription.textContent = data.description;
+                
+                // Mengatur tampilan prioritas & status dengan style
+                modalPriority.innerHTML = `<span class="text-xs font-semibold px-3 py-1 rounded-full ${priorityClasses[data.priority] || 'bg-gray-200'}">${data.priority}</span>`;
+                modalStatus.innerHTML = `<span class="text-sm font-semibold px-3 py-1 rounded-md ${statusClasses[data.status] || 'bg-gray-200'}">${data.status}</span>`;
+                
+                // Mengatur link peta dan navigasi
+                modalMap.src = data.mapSrc;
+                modalNav.href = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(data.location)}`;
+
+                modal.classList.remove('hidden');
+            };
+
+            // Fungsi untuk menutup modal
+            const closeModal = () => {
+                modal.classList.add('hidden');
+                modalMap.src = ''; // Menghentikan loading peta saat modal ditutup
+            };
+
+            // Tambahkan event listener untuk setiap tombol "Lihat Detail"
+            viewDetailButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const taskData = {
+                        title: button.dataset.title,
+                        location: button.dataset.location,
+                        priority: button.dataset.priority,
+                        status: button.dataset.status,
+                        description: button.dataset.description,
+                        pic: button.dataset.pic,
+                        mapSrc: button.dataset.mapSrc
+                    };
+                    openModal(taskData);
+                });
+            });
+
+            // Event listener untuk tombol tutup
+            closeModalBtn.addEventListener('click', closeModal);
+
+            // Event listener untuk menutup modal jika klik di luar area modal
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+        });
+        // --- KODE BARU UNTUK MODAL "SEMUA TUGAS" ---
+const allTasksModal = document.getElementById('all-tasks-modal');
+const openAllTasksBtn = document.getElementById('view-all-tasks-btn');
+const closeAllTasksBtn = document.getElementById('close-all-tasks-modal-btn');
+
+openAllTasksBtn.addEventListener('click', () => {
+    allTasksModal.classList.remove('hidden');
+});
+
+const closeAllTasksModal = () => {
+    allTasksModal.classList.add('hidden');
+};
+
+closeAllTasksBtn.addEventListener('click', closeAllTasksModal);
+
+allTasksModal.addEventListener('click', (e) => {
+    if(e.target === allTasksModal) {
+        closeAllTasksModal();
+    }
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# Dependencies
+/sigap-frontend/node_modules
+/sigap-backend/node_modules
+
+# Build output
+/sigap-frontend/dist
+
+# Environment variables
+/sigap-backend/.env
+
+# IDE / Editor specific
+.vscode/

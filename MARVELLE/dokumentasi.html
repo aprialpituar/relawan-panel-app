@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentasi - SIGAP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <div class="flex h-screen">
+        <aside class="w-64 bg-white flex flex-col justify-between p-4 shadow-lg">
+            <div>
+                <div class="flex items-center space-x-2 p-4">
+                    <img src="img/sigap-logo.png" alt="SIGAP Logo" class="w-11 h-11">
+                    <span class="text-2xl font-bold text-gray-800">SIGAP</span>
+                </div>
+                
+                <nav class="mt-8">
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="dashboard.html" class="flex items-center space-x-3 text-gray-500 hover:bg-gray-100 hover:text-gray-800 py-3 px-4 rounded-lg">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tugas.html" class="flex items-center space-x-3 text-gray-500 hover:bg-gray-100 hover:text-gray-800 py-3 px-4 rounded-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                                <span>Tugas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dokumentasi.html" class="flex items-center space-x-3 text-blue-600 bg-blue-50 font-semibold py-3 px-4 rounded-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                                <span>Dokumentasi</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="update-status.html" class="flex items-center space-x-3 text-gray-500 hover:bg-gray-100 hover:text-gray-800 py-3 px-4 rounded-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h5M20 20v-5h-5M4 20h5v-5M20 4h-5v5"></path></svg>
+                                <span>Update Status</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <button class="w-full flex items-center justify-center space-x-2 bg-red-50 text-red-500 hover:bg-red-100 font-semibold py-3 px-4 rounded-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+
+        <main class="flex-1 p-8 overflow-y-auto">
+            <header class="flex justify-between items-center mb-8">
+                <h1 class="text-3xl font-bold text-gray-800">Dokumentasi</h1>
+                <div class="flex items-center space-x-4">
+                    <div class="text-right">
+                        <p class="font-semibold text-gray-800">Budi Sanjaya</p>
+                        <p class="text-sm text-gray-500">Relawan - Palembang</p>
+                    </div>
+                    <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
+                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                    </div>
+                </div>
+            </header>
+
+            <div class="bg-red-50 border border-red-200 text-red-800 p-4 rounded-lg flex items-center justify-between mb-8 shadow-sm">
+                 <div class="flex items-center space-x-4">
+                    <div class="bg-red-100 p-2 rounded-full">
+                        <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    </div>
+                    <div>
+                        <p class="font-bold">ALERT: TUGAS PRIORITAS MENDESAK</p>
+                        <p class="text-sm">Evakuasi Warga Terjebak Banjir di Kertapati. Segera respon.</p>
+                    </div>
+                </div>
+                <a href="tugas.html"class="bg-red-500 text-white font-semibold py-2 px-6 rounded-lg hover:bg-red-600 transition duration-300">
+                    Lihat & Respon 
+                </a>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <h2 class="text-lg font-semibold text-gray-700 mb-4">Ambil Foto Langsung (Selfie Dengan Lokasi)</h2>
+                
+                <div class="border-2 border-dashed border-gray-300 rounded-lg p-2">
+                    <div id="camera-placeholder" class="bg-black w-full aspect-video rounded-lg flex items-center justify-center">
+                         <svg class="w-24 h-24 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <video id="camera-feed" class="hidden w-full aspect-video rounded-lg" autoplay playsinline></video>
+                    <canvas id="photo-canvas" class="hidden"></canvas>
+                </div>
+
+                <div class="mt-4 flex items-center space-x-4">
+                    <button id="take-photo" class="flex items-center justify-center space-x-2 bg-red-500 text-white font-semibold py-2 px-5 rounded-lg hover:bg-red-600 transition duration-300">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <span>Ambil Foto</span>
+                    </button>
+                    <button id="switch-camera" class="flex items-center justify-center space-x-2 bg-gray-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-gray-700 transition duration-300">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h5M20 20v-5h-5M4 20h5v-5M20 4h-5v5"></path></svg>
+                        <span>Ganti Kamera</span>
+                    </button>
+                </div>
+                <p class="text-xs text-gray-500 mt-3">Foto dan lokasi anda akan otomatis terekam untuk validasi laporan.</p>
+            </div>
+        </main>
+    </div>
+
+    <div id="report-modal" class="hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-xl shadow-2xl p-6 w-full max-w-lg">
+            <div class="flex justify-between items-center border-b pb-3 mb-4">
+                <h3 class="text-xl font-bold text-gray-800">Kirim Laporan Dokumentasi</h3>
+                <button id="close-modal" class="text-3xl text-gray-400 hover:text-red-500">&times;</button>
+            </div>
+            <div>
+                <img id="photo-preview" src="" alt="Pratinjau Foto" class="w-full h-auto rounded-lg mb-4 border">
+                
+                <label for="description" class="block text-sm font-semibold text-gray-700 mb-1">Deskripsi Laporan</label>
+                <textarea id="description" rows="4" class="w-full border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Tuliskan deskripsi singkat mengenai foto dokumentasi..."></textarea>
+                
+                <p id="location-info" class="text-xs text-gray-500 mt-2">
+                    <svg class="inline w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                    Lokasi: Mengambil data...
+                </p>
+                
+                <button id="submit-report" class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg mt-5 hover:bg-blue-700 transition duration-300">
+                    Kirim Laporan
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Elemen Kamera
+            const video = document.getElementById('camera-feed');
+            const placeholder = document.getElementById('camera-placeholder');
+            const canvas = document.getElementById('photo-canvas');
+            const takePhotoButton = document.getElementById('take-photo');
+            const switchCameraButton = document.getElementById('switch-camera');
+
+            // Elemen Modal
+            const modal = document.getElementById('report-modal');
+            const closeModalButton = document.getElementById('close-modal');
+            const photoPreview = document.getElementById('photo-preview');
+            const descriptionInput = document.getElementById('description');
+            const locationInfo = document.getElementById('location-info');
+            const submitReportButton = document.getElementById('submit-report');
+            
+            let currentStream;
+            let facingMode = 'user';
+
+            // --- FUNGSI KAMERA ---
+            function stopCurrentStream() {
+                if (currentStream) {
+                    currentStream.getTracks().forEach(track => track.stop());
+                }
+            }
+            
+            async function startCamera() {
+                stopCurrentStream();
+                try {
+                    currentStream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: facingMode } });
+                    video.srcObject = currentStream;
+                    video.classList.remove('hidden');
+                    placeholder.classList.add('hidden');
+                } catch (err) {
+                    console.error("Error accessing the camera: ", err);
+                    alert("Tidak dapat mengakses kamera. Pastikan Anda memberikan izin.");
+                    video.classList.add('hidden');
+                    placeholder.classList.remove('hidden');
+                }
+            }
+            
+            switchCameraButton.addEventListener('click', () => {
+                facingMode = facingMode === 'user' ? 'environment' : 'user';
+                startCamera();
+            });
+
+            // --- FUNGSI MODAL ---
+            function showModal() { modal.classList.remove('hidden'); }
+            function hideModal() { modal.classList.add('hidden'); }
+
+            closeModalButton.addEventListener('click', hideModal);
+            submitReportButton.addEventListener('click', () => {
+                const description = descriptionInput.value;
+                if(description.trim() === "") {
+                    alert("Deskripsi tidak boleh kosong.");
+                    return;
+                }
+                
+                // Simulasi pengiriman data
+                console.log("--- LAPORAN DIKIRIM ---");
+                console.log("Deskripsi:", description);
+                console.log("Lokasi:", locationInfo.textContent);
+                console.log("Foto (Data URL):", photoPreview.src.substring(0, 50) + '...');
+
+                alert('Laporan berhasil dikirim!');
+                hideModal();
+                descriptionInput.value = ''; // Kosongkan field setelah dikirim
+            });
+
+            // --- ALUR UTAMA: MENGAMBIL FOTO ---
+            takePhotoButton.addEventListener('click', () => {
+                if (!currentStream) {
+                    alert('Kamera belum aktif.');
+                    return;
+                }
+                
+                locationInfo.textContent = 'Lokasi: Mengambil data...';
+                
+                // 1. Ambil Lokasi
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const { latitude, longitude } = position.coords;
+                        locationInfo.textContent = `Lokasi: ${latitude.toFixed(5)}, ${longitude.toFixed(5)}`;
+
+                        // 2. Gambar Foto ke Canvas
+                        const context = canvas.getContext('2d');
+                        canvas.width = video.videoWidth;
+                        canvas.height = video.videoHeight;
+                        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+                        const imageData = canvas.toDataURL('image/png');
+                        
+                        // 3. Tampilkan di Modal
+                        photoPreview.src = imageData;
+                        showModal();
+                    }, 
+                    (err) => {
+                        console.warn(`ERROR(${err.code}): ${err.message}`);
+                        alert('Gagal mendapatkan lokasi. Laporan tidak dapat dilanjutkan tanpa lokasi.');
+                    },
+                    { enableHighAccuracy: true, timeout: 5000, maximumAge: 0 }
+                );
+            });
+
+            // Mulai kamera saat halaman dimuat
+            startCamera();
+        });
+    </script>
+</body>
+</html>
